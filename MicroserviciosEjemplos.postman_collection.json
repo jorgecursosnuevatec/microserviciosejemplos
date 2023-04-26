@@ -1,0 +1,29 @@
+{
+	"info": {
+		"_postman_id": "e6dd9bd7-984a-4f0e-808d-3d7ad2bec1d5",
+		"name": "MicroserviciosEjemplos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20953727"
+	},
+	"item": [
+		{
+			"name": "CaracteresGetChuck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/caracteres/chuck",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"caracteres",
+						"chuck"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

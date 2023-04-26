@@ -1,0 +1,27 @@
+--BAJAMOS LA IMAGEN DOCKER ALPINE QUE OCUPA MENOS
+docker pull jenkins/jenkins:alpine
+
+
+---EJECUTO la imagen docker para que pueda verse desde el 8081, el docker sale por el 8080 y expongo el puerto 50000 al 50000 del
+docker host. Pongo el directorio jenkins_home para que guarde los datos
+## da error docker run -d --name jenkins -p 8081:8080 -p50000:50000 -v jenkins_home:var/jenkins_home jenkins/jenkins:alpine
+
+docker run -d --name jenkins -p 8081:8080 -p50000:50000 -v jenkins_home:/jenkins_home jenkins/jenkins:alpine
+
+
+--PARA VER LA CONTRASEÑA
+docker logs jenkins,sale esto
+
+Jenkins initial setup is required. An admin user has been created and a password generated.
+Please use the following password to proceed to installation:
+
+1970354d296a4b67b01fbaff859e2029
+
+This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
+
+*************************************************************
+*************************************************************
+*************************************************************
+tb se puede ver poniendo docker exec jenkins cat  /var/jenkins_home/secrets/initialAdminPassword
+
+-UNA VEZ INSTALADO LO QUE RECOMIENDA POR DEFECTO,damos de alta usuario. Nombre-password jorge,direccion jorgecrmyerp@gmail.com

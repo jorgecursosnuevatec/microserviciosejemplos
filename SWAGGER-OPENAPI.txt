@@ -1,0 +1,13 @@
+https://www.baeldung.com/spring-rest-openapi-documentation
+
+-POM
+<dependency>
+    <groupId>org.springdoc</groupId>
+    <artifactId>springdoc-openapi-ui</artifactId>
+    <version>1.6.12</version>
+</dependency>
+
+http://localhost:puertomicroservicio/v3/api-docs/
+
+swagger
+http://localhost:puertomicroservicio/swagger-ui.html
